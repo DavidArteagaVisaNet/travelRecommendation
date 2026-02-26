@@ -2,6 +2,15 @@
 
 let travelDataV2 = null;
 
+/* ---------- NEW: Bind buttons in JS (Search/Clear) ---------- */
+document.addEventListener("DOMContentLoaded", () => {
+  const searchBtn = document.querySelector(".search-btn");
+  const clearBtn = document.querySelector(".clear-btn");
+
+  if (searchBtn) searchBtn.addEventListener("click", searchRecommendations);
+  if (clearBtn) clearBtn.addEventListener("click", clearResults);
+});
+
 // Use this file as the data source
 fetch("travel_recommendation_api.json")
   .then((res) => {

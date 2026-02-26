@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo-PC-V1.jpg" type="image/jpeg">
+    <meta charset="UTF-8">
+    <title>TravelBoom</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="travel_recommendation.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <img src="logo-PC-V1.jpg" class="logo">
+    </div>
+
+    <div class="nav-center">
+        <a href="travel_recommendation.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" id="searchInput" placeholder="Search beaches, temples, countries...">
+        <button class="search-btn" onclick="searchRecommendations()">Search</button>
+        <button class="clear-btn" onclick="clearResults()">Clear</button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Your Next Adventure</h1>
+        <p>
+            It encourages exploration of unfamiliar territories embracing diverse cultures and landscapes,
+            while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+        </p>
+
+        <button class="book-btn">BOOK NOW</button>
+
+        <div class="social-icons">
+            <i>🌍</i>
+            <i>📘</i>
+            <i>📸</i>
+            <i>🐦</i>
+        </div>
+    </div>
+</section>
+
+<section class="results-section">
+    <div id="results" class="results-grid"></div>
+</section>
+
+</body>
+</html>
